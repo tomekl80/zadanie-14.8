@@ -24,7 +24,7 @@ App = React.createClass({
 	},
 
 	getGif: function (searchingText, callback) {
-		var GIPHY_API_URL = 'https://api.giphy.com/v1/gifs/search?api_key=c99uC8NT2BE1n9OUkA3vth02sU30II5k&q=&limit=25&offset=0&rating=G&lang=en';
+		var GIPHY_API_URL = 'https://api.giphy.com';
 		var GIPHY_PUB_KEY = 'c99uC8NT2BE1n9OUkA3vth02sU30II5k';
 		var url = GIPHY_API_URL + '/v1/gifs/random?api_key=' + GIPHY_PUB_KEY + '&tag=' + searchingText;
 		var xhr = new XMLHttpRequest();
